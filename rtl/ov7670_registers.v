@@ -13,8 +13,8 @@ module ov7670_registers(
 
   always @(*) begin
     case(sreg)
-      16'hFFFF : finished <= 1'b1;
-      default : finished <= 1'b0;
+      16'hFFFF : finished = 1'b1;
+      default : finished = 1'b0;
     endcase
   end
 

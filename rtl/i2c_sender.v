@@ -15,10 +15,10 @@ module i2c_sender(
 
   always @(busy_sr, data_sr[31]) begin
     if(busy_sr[11:10] == 2'b10 || busy_sr[20:19] == 2'b10 || busy_sr[29:28] == 2'b10) begin
-      siod <= 1'bZ;
+      siod = 1'bZ;
     end
     else begin
-      siod <= data_sr[31];
+      siod = data_sr[31];
     end
   end
 
