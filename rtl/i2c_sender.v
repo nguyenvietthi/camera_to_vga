@@ -1,7 +1,7 @@
 module i2c_sender(
   input  wire       clk     ,
   inout  reg        siod    ,
-  output wire       sioc    ,
+  output reg        sioc    ,
   output reg        taken   ,
   input  wire       send    ,
   input  wire [7:0] id      ,
@@ -10,8 +10,8 @@ module i2c_sender(
 );
 
   reg [7:0]  divider = 8'b00000001;  // this value gives a 254 cycle pause before the initial frame is sent
-  reg [31:0] busy_sr = 1'b0;
-  reg [31:0] data_sr = 1'b1;
+  reg [31:0] busy_sr = 'b0;
+  reg [31:0] data_sr = 'b1;
 
   always @(busy_sr, data_sr[31]) begin
     if(busy_sr[11:10] == 2'b10 || busy_sr[20:19] == 2'b10 || busy_sr[29:28] == 2'b10) begin
@@ -25,11 +25,11 @@ module i2c_sender(
   always @(posedge clk) begin
     taken <= 1'b0;
     if(busy_sr[31] == 1'b0) begin
-      SIOC <= 1'b1;
+      sioc <= 1'b1;
       if(send == 1'b1) begin
         if(divider == 8'b00000000) begin
-          data_sr <= {3'b100,id,1'b0,register,1'b0,value,1'b0,2'b01};
-          busy_sr <= {3'b111,9'b111111111,9'b111111111,9'b111111111,2'b11};
+          data_sr <= {3'b100, id, 1'b0, register, 1'b0, value, 1'b0, 2'b01};
+          busy_sr <= {3'b111, 9'b111111111, 9'b111111111, 9'b111111111, 2'b11};
           taken <= 1'b1;
         end
         else begin
@@ -39,122 +39,122 @@ module i2c_sender(
       end
     end
     else begin
-      case(busy_sr[32 - 1:32 - 3] & busy_sr[2:0])
-      3'b111 & 3'b111 : begin
+      case({busy_sr[32 - 1:32 - 3], busy_sr[2:0]})
+      6'b111_111 : begin
         // start seq #1
         case(divider[7:6])
         2'b00 : begin
-          SIOC <= 1'b1;
+          sioc <= 1'b1;
         end
         2'b01 : begin
-          SIOC <= 1'b1;
+          sioc <= 1'b1;
         end
         2'b10 : begin
-          SIOC <= 1'b1;
+          sioc <= 1'b1;
         end
         default : begin
-          SIOC <= 1'b1;
+          sioc <= 1'b1;
         end
         endcase
       end
-      3'b111 & 3'b110: begin
+      6'b111_110: begin
         // start seq #2
         case(divider[7:6])
         2'b00 : begin
-          SIOC <= 1'b1;
+          sioc <= 1'b1;
         end
         2'b01 : begin
-          SIOC <= 1'b1;
+          sioc <= 1'b1;
         end
         2'b10 : begin
-          SIOC <= 1'b1;
+          sioc <= 1'b1;
         end
         default : begin
-          SIOC <= 1'b1;
+          sioc <= 1'b1;
         end
         endcase
       end
-      3'b111 & 3'b100: begin
+      6'b111_100: begin
         // start seq #3
         case(divider[7:6])
         2'b00 : begin
-          SIOC <= 1'b0;
+          sioc <= 1'b0;
         end
         2'b01 : begin
-          SIOC <= 1'b0;
+          sioc <= 1'b0;
         end
         2'b10 : begin
-          SIOC <= 1'b0;
+          sioc <= 1'b0;
         end
         default : begin
-          SIOC <= 1'b0;
+          sioc <= 1'b0;
         end
         endcase
       end
-      3'b110 & 3'b000: begin
+      6'b110_000: begin
         // end seq #1
         case(divider[7:6])
         2'b00 : begin
-          SIOC <= 1'b0;
+          sioc <= 1'b0;
         end
         2'b01 : begin
-          SIOC <= 1'b1;
+          sioc <= 1'b1;
         end
         2'b10 : begin
-          SIOC <= 1'b1;
+          sioc <= 1'b1;
         end
         default : begin
-          SIOC <= 1'b1;
+          sioc <= 1'b1;
         end
         endcase
       end
-      3'b100 & 3'b000: begin
+      6'b100_000: begin
         // end seq #2
         case(divider[7:6])
         2'b00 : begin
-          SIOC <= 1'b1;
+          sioc <= 1'b1;
         end
         2'b01 : begin
-          SIOC <= 1'b1;
+          sioc <= 1'b1;
         end
         2'b10 : begin
-          SIOC <= 1'b1;
+          sioc <= 1'b1;
         end
         default : begin
-          SIOC <= 1'b1;
+          sioc <= 1'b1;
         end
         endcase
       end
-      3'b000 & 3'b000: begin
+      6'b000_000: begin
         // Idle
         case(divider[7:6])
         2'b00 : begin
-          SIOC <= 1'b1;
+          sioc <= 1'b1;
         end
         2'b01 : begin
-          SIOC <= 1'b1;
+          sioc <= 1'b1;
         end
         2'b10 : begin
-          SIOC <= 1'b1;
+          sioc <= 1'b1;
         end
         default : begin
-          SIOC <= 1'b1;
+          sioc <= 1'b1;
         end
         endcase
       end
       default : begin
         case(divider[7:6])
         2'b00 : begin
-          SIOC <= 1'b0;
+          sioc <= 1'b0;
         end
         2'b01 : begin
-          SIOC <= 1'b1;
+          sioc <= 1'b1;
         end
         2'b10 : begin
-          SIOC <= 1'b1;
+          sioc <= 1'b1;
         end
         default : begin
-          SIOC <= 1'b0;
+          sioc <= 1'b0;
         end
         endcase
       end
