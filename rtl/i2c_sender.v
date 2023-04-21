@@ -1,6 +1,6 @@
 module i2c_sender(
   input  wire       clk     ,
-  inout  reg        siod    ,
+  inout             siod    ,
   output reg        sioc    ,
   output reg        taken   ,
   input  wire       send    ,
@@ -13,14 +13,15 @@ module i2c_sender(
   reg [31:0] busy_sr = 'b0;
   reg [31:0] data_sr = 'b1;
 
-  always @(busy_sr, data_sr[31]) begin
-    if(busy_sr[11:10] == 2'b10 || busy_sr[20:19] == 2'b10 || busy_sr[29:28] == 2'b10) begin
-      siod = 1'bZ;
-    end
-    else begin
-      siod = data_sr[31];
-    end
-  end
+  // always @(busy_sr, data_sr[31]) begin
+  //   if(busy_sr[11:10] == 2'b10 || busy_sr[20:19] == 2'b10 || busy_sr[29:28] == 2'b10) begin
+  //     siod = 1'bZ;
+  //   end
+  //   else begin
+  //     siod = data_sr[31];
+  //   end
+  // end\
+  assign siod = (busy_sr[11:10] == 2'b10 || busy_sr[20:19] == 2'b10 || busy_sr[29:28] == 2'b10) ? 1'bz : data_sr[31];
 
   always @(posedge clk) begin
     taken <= 1'b0;

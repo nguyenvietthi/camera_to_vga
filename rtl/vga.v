@@ -3,8 +3,8 @@ module vga(
   output reg  [3:0]  vga_red    ,
   output reg  [3:0]  vga_green  ,
   output reg  [3:0]  vga_blue   ,
-  output wire        vga_hsync  ,
-  output wire        vga_vsync  ,
+  output reg         vga_hsync  ,
+  output reg         vga_vsync  ,
   output wire [18:0] frame_addr ,
   input  wire [11:0] frame_pixel
 );
@@ -66,17 +66,17 @@ module vga(
     end
     // Are we in the hSync pulse? (one has been added to include frame_buffer_latency)
     if(hCounter > hStartSync && hCounter <= hEndSync) begin
-      vga_hSync <= hsync_active;
+      vga_hsync <= hsync_active;
     end
     else begin
-      vga_hSync <=  ~hsync_active;
+      vga_hsync <=  ~hsync_active;
     end
     // Are we in the vSync pulse?
     if(vCounter >= vStartSync && vCounter < vEndSync) begin
-      vga_vSync <= vsync_active;
+      vga_vsync <= vsync_active;
     end
     else begin
-      vga_vSync <=  ~vsync_active;
+      vga_vsync <=  ~vsync_active;
     end
   end
 

@@ -9,7 +9,7 @@ module ov7670_top(
   input  wire       OV7670_PCLK ,
   output wire       OV7670_XCLK ,
   input  wire [7:0] OV7670_D    ,
-  output wire [7:0] LED         ,
+  output reg  [7:0] LED         ,
   output wire [3:0] vga_red     ,
   output wire [3:0] vga_green   ,
   output wire [3:0] vga_blue    ,
@@ -59,9 +59,9 @@ module ov7670_top(
 
   always @(config_finished) begin
     if(config_finished) begin
-      led = 8'b00000000;
+      LED = 8'b00000000;
     end else begin
-      led = 8'b11111111;
+      LED = 8'b11111111;
     end
   end
 
