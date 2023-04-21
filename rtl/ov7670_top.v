@@ -47,7 +47,7 @@ module ov7670_top(
     .frame_pixel(frame_pixel)
   );
 
-  blk_mem_gen_0 bram(
+  blk_mem_gen blk_mem_gen_inst(
     .clka (OV7670_PCLK ),
     .wea  (capture_we  ),
     .addra(capture_addr),
@@ -57,7 +57,13 @@ module ov7670_top(
     .doutb(frame_pixel )
   );
 
-  assign led = 7'b0000000 & config_finished;
+  always @(config_finished) begin
+    if(config_finished) begin
+      led = 8'b00000000;
+    end else begin
+      led = 8'b11111111;
+    end
+  end
 
   ov7670_capture ov7670_capture_inst(
     .pclk (OV7670_PCLK ),
@@ -80,7 +86,7 @@ module ov7670_top(
     .xclk           (OV7670_XCLK    )
   );
 
-  clocking clock_manager_inst(
+  clk_wiz clk_wiz_inst(
     .CLK_100(CLK100),
     .CLK_50 (CLK50 ),
     .CLK_25 (CLK25 )
