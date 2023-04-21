@@ -111,7 +111,7 @@ end component;
 
 	signal capture_addr    : std_logic_vector(18 downto 0);
 	signal capture_data    : std_logic_vector(11 downto 0);
-   signal capture_we      : std_logic_vector(0 downto 0);
+  signal capture_we      : std_logic_vector(0 downto 0);
 	signal resend          : std_logic;
 	signal config_finished : std_logic;
 	
