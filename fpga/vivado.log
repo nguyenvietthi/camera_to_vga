@@ -1,0 +1,88 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat Apr 22 16:13:20 2023
+# Process ID: 69895
+# Current directory: /media/nguyenvietthi/DATA/camera_to_vga/fpga
+# Command line: vivado cam2vga.xdc
+# Log file: /media/nguyenvietthi/DATA/camera_to_vga/fpga/vivado.log
+# Journal file: /media/nguyenvietthi/DATA/camera_to_vga/fpga/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/nguyenvietthi/DATA/linux_tools/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 6193.980 ; gain = 166.172 ; free physical = 704 ; free virtual = 17966
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Apr 22 16:15:32 2023] Launched synth_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/runme.log
+[Sat Apr 22 16:15:32 2023] Launched impl_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/runme.log
+file copy -force /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/ov7670_top.bit /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat Apr 22 16:37:02 2023] Launched synth_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 6558.160 ; gain = 16.008 ; free physical = 1144 ; free virtual = 17684
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat Apr 22 16:51:50 2023] Launched synth_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 6574.359 ; gain = 16.199 ; free physical = 890 ; free virtual = 17697
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat Apr 22 16:57:44 2023] Launched synth_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 6606.375 ; gain = 16.008 ; free physical = 808 ; free virtual = 17678
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Apr 22 17:02:05 2023] Launched impl_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/runme.log
+file copy -force /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/ov7670_top.bit /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat Apr 22 17:08:26 2023] Launched synth_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat Apr 22 17:15:17 2023] Launched synth_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 6704.422 ; gain = 24.012 ; free physical = 1382 ; free virtual = 17654
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Apr 22 17:21:30 2023] Launched impl_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/runme.log
+file copy -force /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/ov7670_top.bit /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Apr 22 17:43:54 2023] Launched synth_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/runme.log
+[Sat Apr 22 17:43:54 2023] Launched impl_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/runme.log
+file copy -force /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/ov7670_top.bit /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Apr 22 17:56:46 2023] Launched synth_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/runme.log
+[Sat Apr 22 17:56:46 2023] Launched impl_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/runme.log
+file copy -force /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/ov7670_top.bit /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Apr 22 18:19:39 2023] Launched synth_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/runme.log
+[Sat Apr 22 18:19:39 2023] Launched impl_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/runme.log
+file copy -force /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/ov7670_top.bit /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Apr 22 18:57:41 2023] Launched synth_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/runme.log
+[Sat Apr 22 18:57:41 2023] Launched impl_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:27 ; elapsed = 00:00:41 . Memory (MB): peak = 6928.531 ; gain = 0.000 ; free physical = 1497 ; free virtual = 16767
+file copy -force /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/ov7670_top.bit /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit

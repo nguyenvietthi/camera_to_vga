@@ -77,19 +77,19 @@ module ov7670_top(
 
   ov7670_controller ov7670_controller_inst(
     .clk            (clk50          ),
-    .sioc           (ov7670_sioc    ),
+    .sioc           (OV7670_SIOC    ),
     .resend         (resend         ),
     .config_finished(config_finished),
-    .siod           (ov7670_siod    ),
+    .siod           (OV7670_SIOD    ),
     .pwdn           (OV7670_PWDN    ),
     .reset          (OV7670_RESET   ),
     .xclk           (OV7670_XCLK    )
   );
 
   clk_wiz clk_wiz_inst(
-    .CLK_100(CLK100),
-    .CLK_50 (CLK50 ),
-    .CLK_25 (CLK25 )
+    .CLK_100(clk100),
+    .CLK_50 (clk50 ),
+    .CLK_25 (clk25 )
   );
 
 

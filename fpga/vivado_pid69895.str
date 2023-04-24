@@ -1,0 +1,952 @@
+/*
+
+Xilinx Vivado v2018.1 (64-bit) [Major: 2018, Minor: 1]
+SW Build: 2188600 on Wed Apr  4 18:39:19 MDT 2018
+IP Build: 2185939 on Wed Apr  4 20:55:05 MDT 2018
+
+Process ID: 69895
+License: Customer
+
+Current time: 	Sat Apr 22 16:13:58 ICT 2023
+Time zone: 	Indochina Time (Asia/Ho_Chi_Minh)
+
+OS: Ubuntu
+OS Version: 5.15.0-69-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :0
+Screen size: 3840x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 40 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	/media/nguyenvietthi/DATA/linux_tools/Xilinx/Vivado/2018.1/tps/lnx64/jre
+Java executable location: 	/media/nguyenvietthi/DATA/linux_tools/Xilinx/Vivado/2018.1/tps/lnx64/jre/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	nguyenvietthi
+User home directory: /home/nguyenvietthi
+User working directory: /media/nguyenvietthi/DATA/camera_to_vga/fpga
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /media/nguyenvietthi/DATA/linux_tools/Xilinx/Vivado
+HDI_APPROOT: /media/nguyenvietthi/DATA/linux_tools/Xilinx/Vivado/2018.1
+RDI_DATADIR: /media/nguyenvietthi/DATA/linux_tools/Xilinx/Vivado/2018.1/data
+RDI_BINDIR: /media/nguyenvietthi/DATA/linux_tools/Xilinx/Vivado/2018.1/bin
+
+Vivado preferences file location: /home/nguyenvietthi/.Xilinx/Vivado/2018.1/vivado.xml
+Vivado preferences directory: /home/nguyenvietthi/.Xilinx/Vivado/2018.1/
+Vivado layouts directory: /home/nguyenvietthi/.Xilinx/Vivado/2018.1/layouts
+PlanAhead jar file location: 	/media/nguyenvietthi/DATA/linux_tools/Xilinx/Vivado/2018.1/lib/classes/planAhead.jar
+Vivado log file location: 	/media/nguyenvietthi/DATA/camera_to_vga/fpga/vivado.log
+Vivado journal file location: 	/media/nguyenvietthi/DATA/camera_to_vga/fpga/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-69895-nguyenvietthi
+
+GUI allocated memory:	150 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 867 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 53 MB (+53439kb) [00:00:16]
+// [Engine Memory]: 859 MB (+749726kb) [00:00:16]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// CommandFailedException: ERROR: [ProjectBase 63-9] XML parser encountered a problem in /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga.xdc at line 1 : XML character encoding not supported 
+// [GUI Memory]: 68 MB (+12998kb) [00:00:17]
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2018.1 (64-bit)
+# SW Build: 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build: 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Current time: Sat Apr 22 16:13:58 ICT 2023
+# Process ID: 69895
+# OS: Ubuntu
+# User: nguyenvietthi
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+ui.frmwork.CommandFailedException: ERROR: [ProjectBase 63-9] XML parser encountered a problem in /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga.xdc at line 1 : XML character encoding not supported
+ (See /media/nguyenvietthi/DATA/camera_to_vga/fpga/vivado_pid69895.debug)
+*/
+// HOptionPane Error: 'ERROR: [ProjectBase 63-9] XML parser encountered a problem in /media/nguyenvietthi/ DATA/camera_to_vga/fpga/cam2vga.xdc at line 1 : XML character encoding not supported (Vivado v2018.1 (64-bit))'
+// HMemoryUtils.trashcanNow. Engine heap size: 873 MB. GUI used memory: 40 MB. Current time: 4/22/23 4:14:02 PM ICT
+selectButton("RDIResource.MainWindowUtils_ERROR_OK", "OK"); // JButton (A, G)
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.xpr", 1); // q (O, ch)
+// Opening Vivado Project: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.xpr. Version: Vivado v2018.1 
+// bv (ch):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,026 MB (+129903kb) [00:00:56]
+// Tcl Message: open_project /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/nguyenvietthi/DATA/linux_tools/Xilinx/Vivado/2018.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,049 MB. GUI used memory: 43 MB. Current time: 4/22/23 4:14:41 PM ICT
+// Project name: cam2vga; location: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga; part: xc7z020clg484-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 6193.980 ; gain = 166.172 ; free physical = 704 ; free virtual = 17966 
+// Elapsed time: 11 seconds
+dismissDialog("Open Project"); // bv (ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 1,085 MB (+7190kb) [00:01:03]
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v)]", 1); // B (D, ch)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 8); // B (D, ch)
+// PAPropertyPanels.initPanels (cam2vga.xdc) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, cam2vga.xdc]", 10, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, cam2vga.xdc]", 10, false, false, false, false, false, true); // B (D, ch) - Double Click
+// [GUI Memory]: 73 MB (+1105kb) [00:01:26]
+// Elapsed time: 25 seconds
+selectCodeEditor("cam2vga.xdc", 472, 339); // cd (w, ch)
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cam2vga.xdc", 397, 340); // cd (w, ch)
+selectCodeEditor("cam2vga.xdc", 397, 340, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "cam2vga.xdc", 'c'); // cd (w, ch)
+typeControlKey((HResource) null, "cam2vga.xdc", 'c'); // cd (w, ch)
+selectCodeEditor("cam2vga.xdc", 418, 498); // cd (w, ch)
+selectCodeEditor("cam2vga.xdc", 418, 498, false, false, false, false, true); // cd (w, ch) - Double Click
+typeControlKey((HResource) null, "cam2vga.xdc", 'v'); // cd (w, ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// [GUI Memory]: 81 MB (+4641kb) [00:01:49]
+// TclEventType: RUN_MODIFY
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: RUN_LAUNCH
+// bv (ch):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sat Apr 22 16:15:32 2023] Launched synth_1... Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/runme.log [Sat Apr 22 16:15:32 2023] Launched impl_1... Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bv (ch)
+// [GUI Memory]: 86 MB (+1183kb) [00:02:07]
+// [GUI Memory]: 91 MB (+342kb) [00:05:07]
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking too long to process. Increasing delay to 3000 ms.
+// ah (ch): Bitstream Generation Completed: addNotify
+// Elapsed time: 420 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // Z (ch, Popup.HeavyWeightWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (ch, Popup.HeavyWeightWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (ch, Popup.HeavyWeightWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // Z (ch, Popup.HeavyWeightWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (ch, Popup.HeavyWeightWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (ch, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ac (ch, Popup.HeavyWeightWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES
+// HMemoryUtils.trashcanNow. Engine heap size: 1,108 MB. GUI used memory: 51 MB. Current time: 4/22/23 4:22:42 PM ICT
+// Elapsed time: 13 seconds
+setFileChooser("/media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga");
+// 'a' command handler elapsed time: 13 seconds
+// Tcl Message: file copy -force /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/ov7670_top.bit /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit 
+selectButton("PAResourceEtoH.ExportBitstreamFile_BITSTREAM_EXPORT_SUCCESSFUL_OK", "OK"); // JButton (A, G)
+// Elapsed time: 105 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v), clk_wiz_inst : clk_wiz (clk_wiz.xci)]", 7, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v), clk_wiz_inst : clk_wiz (clk_wiz.xci)]", 7, false, false, false, false, false, true); // B (D, ch) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// O (ch):  Re-customize IP : addNotify
+// TclEventType: LOAD_FEATURE
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (O)
+// [Engine Memory]: 1,143 MB (+4106kb) [00:11:05]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,144 MB. GUI used memory: 47 MB. Current time: 4/22/23 4:24:47 PM ICT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,171 MB. GUI used memory: 46 MB. Current time: 4/22/23 4:25:07 PM ICT
+// [Engine Memory]: 1,246 MB (+48390kb) [00:11:35]
+// Elapsed time: 31 seconds
+dismissDialog("Re-customize IP"); // O (ch)
+// Elapsed time: 79 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v), clk_wiz_inst : clk_wiz (clk_wiz.xci)]", 7); // B (D, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v), clk_wiz_inst : clk_wiz (clk_wiz.xci), clk_wiz (clk_wiz.v)]", 8, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v), clk_wiz_inst : clk_wiz (clk_wiz.xci), clk_wiz (clk_wiz.v)]", 8, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,274 MB. GUI used memory: 58 MB. Current time: 4/22/23 4:26:42 PM ICT
+// Elapsed time: 39 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v), clk_wiz_inst : clk_wiz (clk_wiz.xci), clk_wiz (clk_wiz.v), inst : clk_wiz_clk_wiz (clk_wiz_clk_wiz.v)]", 9, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v), clk_wiz_inst : clk_wiz (clk_wiz.xci), clk_wiz (clk_wiz.v), inst : clk_wiz_clk_wiz (clk_wiz_clk_wiz.v)]", 9, false, false, false, false, false, true); // B (D, ch) - Double Click
+// Elapsed time: 21 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v), blk_mem_gen_inst : blk_mem_gen (blk_mem_gen.xci)]", 4); // B (D, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 1,323 MB (+15673kb) [00:14:04]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 59 MB. Current time: 4/22/23 4:27:47 PM ICT
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 181 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ch)
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g (aQ, ch): FALSE
+// Elapsed time: 12 seconds
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // g (aQ, ch): FALSE
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net config_finished with 1st driver pin 'ov7670_controller:/ov7670_registers_inst/finished' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:1]. ]", 1); // ah (O, ch)
+// [GUI Memory]: 96 MB (+882kb) [00:18:23]
+// [GUI Memory]: 101 MB (+270kb) [00:19:23]
+// Elapsed time: 202 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-5559] multi-driven net config_finished is connected to constant driver, other driver is ignored [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:1]. ]", 9); // ah (O, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 111 MB (+4458kb) [00:22:21]
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,350 MB. GUI used memory: 59 MB. Current time: 4/22/23 4:36:07 PM ICT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 131 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ch): Launch Runs: addNotify
+dismissDialog("Launch Runs"); // f (ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bv (ch):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ch)
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Apr 22 16:37:02 2023] Launched synth_1... Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 6558.160 ; gain = 16.008 ; free physical = 1144 ; free virtual = 17684 
+// 'k' command handler elapsed time: 19 seconds
+// Elapsed time: 18 seconds
+dismissDialog("Starting Design Runs"); // bv (ch)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ch)
+selectTab((HResource) null, (HResource) null, "Log", 2); // aE (Q, ch)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ch)
+// Elapsed time: 84 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ch)
+// Elapsed time: 87 seconds
+selectTab((HResource) null, (HResource) null, "Log", 2); // aE (Q, ch)
+// Elapsed time: 22 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ch)
+// TclEventType: RUN_COMPLETED
+// ah (ch): Synthesis Completed: addNotify
+// Elapsed time: 64 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (ch)
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g (aQ, ch): FALSE
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net config_finished with 1st driver pin 'ov7670_controller:/ov7670_registers_inst/finished' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:1]. ]", 1); // ah (O, ch)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net config_finished with 1st driver pin 'ov7670_controller:/ov7670_registers_inst/finished' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:1]. ]", 1, true); // ah (O, ch) - Node
+// [GUI Memory]: 124 MB (+8305kb) [00:28:20]
+// Elapsed time: 18 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net config_finished with 1st driver pin 'ov7670_controller:/ov7670_registers_inst/finished' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:1]. ]", 1); // ah (O, ch)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net config_finished with 1st driver pin 'ov7670_controller:/ov7670_registers_inst/finished' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:1]. , [Synth 8-3352] multi-driven net config_finished with 2nd driver pin 'GND' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:1]. ]", 2, false); // ah (O, ch)
+// [GUI Memory]: 134 MB (+4113kb) [00:28:40]
+// Elapsed time: 16 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net config_finished with 1st driver pin 'ov7670_controller:/ov7670_registers_inst/finished' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:1]. ]", 1, true); // ah (O, ch) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net config_finished with 1st driver pin 'ov7670_controller:/ov7670_registers_inst/finished' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:1]. , [Synth 8-3352] multi-driven net config_finished with 2nd driver pin 'GND' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:1]. ]", 2, false); // ah (O, ch)
+// Elapsed time: 86 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net config_finished with 1st driver pin 'ov7670_controller:/ov7670_registers_inst/finished' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:1]. , [Synth 8-3352] multi-driven net advance with 1st driver pin 'ov7670_controller:/i2c_sender_inst/taken' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:39]. ]", 3, false); // ah (O, ch)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net config_finished with 1st driver pin 'ov7670_controller:/ov7670_registers_inst/finished' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:1]. , [Synth 8-3352] multi-driven net advance with 2nd driver pin 'GND' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:39]. ]", 4, false); // ah (O, ch)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net config_finished with 1st driver pin 'ov7670_controller:/ov7670_registers_inst/finished' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:1]. , [Synth 8-3352] multi-driven net advance with 2nd driver pin 'GND' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:39]. ]", 4, false, false, false, false, true, false); // ah (O, ch) - Popup Trigger
+selectMenu(PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, "Message Severity"); // Z (K, ch)
+// Elapsed time: 171 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net config_finished with 1st driver pin 'ov7670_controller:/ov7670_registers_inst/finished' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:1]. , [Synth 8-3352] multi-driven net finished with 1st driver pin 'ov7670_controller_inst/ov7670_registers_inst/finished_inferred/out0' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_registers.v:15]. ]", 7, false); // ah (O, ch)
+// Elapsed time: 46 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net config_finished with 1st driver pin 'ov7670_controller:/ov7670_registers_inst/finished' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:1]. , [Synth 8-3352] multi-driven net config_finished with 2nd driver pin 'GND' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:1]. ]", 2, false); // ah (O, ch)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net config_finished with 1st driver pin 'ov7670_controller:/ov7670_registers_inst/finished' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:1]. , [Synth 8-3352] multi-driven net config_finished with 2nd driver pin 'GND' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:1]. ]", 2, false, false, false, false, false, true); // ah (O, ch) - Double Click
+// Elapsed time: 18 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-5559] multi-driven net config_finished is connected to constant driver, other driver is ignored [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:1]. ]", 9); // ah (O, ch)
+// Elapsed time: 17 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net config_finished with 1st driver pin 'ov7670_controller:/ov7670_registers_inst/finished' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:1]. ]", 1, true); // ah (O, ch) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net config_finished with 1st driver pin 'ov7670_controller:/ov7670_registers_inst/finished' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:1]. , [Synth 8-3352] multi-driven net config_finished with 2nd driver pin 'GND' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:1]. ]", 2, false); // ah (O, ch)
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, cam2vga.xdc]", 13, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, cam2vga.xdc]", 13, false, false, false, false, false, true); // B (D, ch) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,385 MB. GUI used memory: 66 MB. Current time: 4/22/23 4:51:27 PM ICT
+// Elapsed time: 163 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bv (ch):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ch)
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Apr 22 16:51:50 2023] Launched synth_1... Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 6574.359 ; gain = 16.199 ; free physical = 890 ; free virtual = 17697 
+// 'k' command handler elapsed time: 21 seconds
+// Elapsed time: 19 seconds
+dismissDialog("Starting Design Runs"); // bv (ch)
+// Elapsed time: 56 seconds
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ch)
+// TclEventType: RUN_COMPLETED
+// ah (ch): Synthesis Completed: addNotify
+// Elapsed time: 229 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (ch)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ch)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net advance with 1st driver pin 'ov7670_controller:/i2c_sender_inst/taken' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:39]. ]", 1); // ah (O, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 1,401 MB (+12482kb) [00:43:11]
+// Elapsed time: 23 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net advance with 1st driver pin 'ov7670_controller:/i2c_sender_inst/taken' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:39]. , [Synth 8-3352] multi-driven net taken with 1st driver pin 'ov7670_controller_inst/i2c_sender_inst/taken_reg/Q' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/i2c_sender.v:34]. ]", 3, false); // ah (O, ch)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3352] multi-driven net advance with 1st driver pin 'ov7670_controller:/i2c_sender_inst/taken' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_controller.v:39]. , [Synth 8-3352] multi-driven net taken with 2nd driver pin 'GND' [/media/nguyenvietthi/DATA/camera_to_vga/rtl/i2c_sender.v:34]. ]", 4, false); // ah (O, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (f)
+dismissDialog("Launch Runs"); // f (ch)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,418 MB. GUI used memory: 66 MB. Current time: 4/22/23 4:57:22 PM ICT
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bv (ch):  Resetting Runs : addNotify
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bv (ch):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ch)
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Apr 22 16:57:44 2023] Launched synth_1... Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 6606.375 ; gain = 16.008 ; free physical = 808 ; free virtual = 17678 
+// 'k' command handler elapsed time: 21 seconds
+// Elapsed time: 20 seconds
+dismissDialog("Starting Design Runs"); // bv (ch)
+// Elapsed time: 132 seconds
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ch)
+// Elapsed time: 78 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ch)
+selectTab((HResource) null, (HResource) null, "Log", 2); // aE (Q, ch)
+// TclEventType: RUN_COMPLETED
+// ah (ch): Synthesis Completed: addNotify
+// Elapsed time: 42 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (ch)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ch): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bv (ch):  Resetting Runs : addNotify
+// f (ch): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (ch)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sat Apr 22 17:02:05 2023] Launched impl_1... Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/runme.log 
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ch)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ch): Bitstream Generation Completed: addNotify
+// Elapsed time: 134 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (ch)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES, "Export Bitstream File..."); // ac (ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES
+setFileChooser("/media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit");
+// 'a' command handler elapsed time: 8 seconds
+selectButton("RDIResource.HChooserHelpers_FILE_ALREADY_EXISTS_OK_TO_OVERWRITE_OK", "OK"); // JButton (A, G)
+// Tcl Message: file copy -force /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/ov7670_top.bit /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit 
+selectButton("PAResourceEtoH.ExportBitstreamFile_BITSTREAM_EXPORT_SUCCESSFUL_OK", "OK"); // JButton (A, G)
+// Elapsed time: 77 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ch)
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g (aQ, ch): TRUE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3848] Net OV7670_SIOC in module/entity ov7670_top does not have driver. [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_top.v:3]. ]", 1, true); // ah (O, ch) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_top.v;-;;-;16;-;line;-;3;-;;-;16;-;"); // ah (O, ch)
+selectCodeEditor("ov7670_top.v", 186, 24); // cd (w, ch)
+selectCodeEditor("ov7670_top.v", 186, 24, false, false, false, false, true); // cd (w, ch) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,461 MB. GUI used memory: 68 MB. Current time: 4/22/23 5:07:02 PM ICT
+// Elapsed time: 53 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3295] tying undriven pin debounce_inst:clk to constant 0 [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_top.v:33]. ]", 3, true); // ah (O, ch) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_top.v;-;;-;16;-;line;-;33;-;;-;16;-;"); // ah (O, ch)
+selectCodeEditor("ov7670_top.v", 85, 387); // cd (w, ch)
+selectCodeEditor("ov7670_top.v", 85, 387, false, false, false, false, true); // cd (w, ch) - Double Click
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 1,477 MB (+5738kb) [00:54:00]
+// Elapsed time: 34 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (cM, ch)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// an (ch): Save Project: addNotify
+dismissDialog("Save Project"); // an (ch)
+// k (ch): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, ch)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_NO, "No"); // a (k)
+dismissDialog("Text Changed"); // k (ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v)]", 1, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v)]", 1, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ch): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bv (ch):  Resetting Runs : addNotify
+dismissDialog("Run Synthesis"); // A (ch)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bv (ch):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Sat Apr 22 17:08:26 2023] Launched synth_1... Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 6 seconds
+dismissDialog("Starting Design Runs"); // bv (ch)
+// Elapsed time: 40 seconds
+selectTab((HResource) null, (HResource) null, "Log", 2); // aE (Q, ch)
+// Elapsed time: 36 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ch)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ch)
+// Elapsed time: 141 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ch)
+// TclEventType: RUN_COMPLETED
+// ah (ch): Synthesis Completed: addNotify
+// Elapsed time: 67 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (ch)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3848] Net clk50 in module/entity ov7670_top does not have driver. [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_top.v:29]. ]", 1, true); // ah (O, ch) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_top.v;-;;-;16;-;line;-;29;-;;-;16;-;"); // ah (O, ch)
+selectCodeEditor("ov7670_top.v", 108, 432); // cd (w, ch)
+selectCodeEditor("ov7670_top.v", 108, 432, false, false, false, false, true); // cd (w, ch) - Double Click
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk50"); // l (aP, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,495 MB. GUI used memory: 68 MB. Current time: 4/22/23 5:13:57 PM ICT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 35 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3917] design ov7670_top has port OV7670_RESET driven by constant 1. ]", 4, true); // ah (O, ch) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3332] Sequential element (ov7670_capture_inst/d_latch_reg[11]) is unused and will be removed from module ov7670_top.. ]", 5, true); // ah (O, ch) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. clk_wiz_inst/inst/clkin1_ibufg . Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.. ]", 6, false); // ah (O, ch)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3295] tying undriven pin debounce_inst:clk to constant 0 [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_top.v:33]. ]", 3, true); // ah (O, ch) - Node
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3295] tying undriven pin debounce_inst:clk to constant 0 [/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_top.v:33]. ]", 3, true); // ah (O, ch) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/media/nguyenvietthi/DATA/camera_to_vga/rtl/ov7670_top.v;-;;-;16;-;line;-;33;-;;-;16;-;"); // ah (O, ch)
+selectCodeEditor("ov7670_top.v", 251, 354); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v)]", 1, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v)]", 1, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bv (ch):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ch)
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,527 MB. GUI used memory: 68 MB. Current time: 4/22/23 5:14:52 PM ICT
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Apr 22 17:15:17 2023] Launched synth_1... Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 6704.422 ; gain = 24.012 ; free physical = 1382 ; free virtual = 17654 
+// 'k' command handler elapsed time: 31 seconds
+// Elapsed time: 30 seconds
+dismissDialog("Starting Design Runs"); // bv (ch)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ch)
+// TclEventType: RUN_COMPLETED
+// ah (ch): Synthesis Completed: addNotify
+// Elapsed time: 286 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (ch)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ch)
+// Elapsed time: 46 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MUX_RST[0]. ]", 1, true); // ah (O, ch) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3917] design ov7670_top has port OV7670_RESET driven by constant 1. ]", 2, true); // ah (O, ch) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3917] design ov7670_top has port OV7670_RESET driven by constant 1. ]", 2, true, false, false, false, true, false); // ah (O, ch) - Popup Trigger - Node
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ch): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bv (ch):  Resetting Runs : addNotify
+// f (ch): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (ch)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sat Apr 22 17:21:30 2023] Launched impl_1... Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/runme.log 
+// Elapsed time: 44 seconds
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 9, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 9, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 9); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, cam2vga.xdc]", 10, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, cam2vga.xdc]", 10, false, false, false, false, false, true); // B (D, ch) - Double Click
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_COMPLETED
+// ah (ch): Bitstream Generation Completed: addNotify
+// Elapsed time: 126 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // U (q, ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (ch)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (ch)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES, "Export Bitstream File..."); // ac (ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES
+setFileChooser("/media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit");
+// 'a' command handler elapsed time: 5 seconds
+selectButton("RDIResource.HChooserHelpers_FILE_ALREADY_EXISTS_OK_TO_OVERWRITE_OK", "OK"); // JButton (A, G)
+// Tcl Message: file copy -force /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/ov7670_top.bit /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit 
+// Elapsed time: 568 seconds
+selectButton("PAResourceEtoH.ExportBitstreamFile_BITSTREAM_EXPORT_SUCCESSFUL_OK", "OK"); // JButton (A, G)
+selectCodeEditor("cam2vga.xdc", 314, 377); // cd (w, ch)
+selectCodeEditor("cam2vga.xdc", 463, 190); // cd (w, ch)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 1,561 MB (+10550kb) [01:26:09]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,561 MB. GUI used memory: 70 MB. Current time: 4/22/23 5:39:53 PM ICT
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,593 MB. GUI used memory: 69 MB. Current time: 4/22/23 5:41:37 PM ICT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,617 MB. GUI used memory: 69 MB. Current time: 4/22/23 5:42:07 PM ICT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// [Engine Memory]: 1,641 MB (+2078kb) [01:29:17]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,646 MB. GUI used memory: 69 MB. Current time: 4/22/23 5:43:02 PM ICT
+// Elapsed time: 546 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v), ov7670_controller_inst : ov7670_controller (ov7670_controller.v)]", 6); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v), ov7670_controller_inst : ov7670_controller (ov7670_controller.v), ov7670_registers_inst : ov7670_registers (ov7670_registers.v)]", 8, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v), ov7670_controller_inst : ov7670_controller (ov7670_controller.v), ov7670_registers_inst : ov7670_registers (ov7670_registers.v)]", 8, false, false, false, false, false, true); // B (D, ch) - Double Click
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,665 MB. GUI used memory: 70 MB. Current time: 4/22/23 5:43:32 PM ICT
+// Elapsed time: 16 seconds
+selectCodeEditor("ov7670_registers.v", 154, 261); // cd (w, ch)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sat Apr 22 17:43:54 2023] Launched synth_1... Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/runme.log [Sat Apr 22 17:43:54 2023] Launched impl_1... Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_COMPLETED
+// ah (ch): Bitstream Generation Completed: addNotify
+// Elapsed time: 474 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (ch)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES, "Export Bitstream File..."); // ac (ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES
+setFileChooser("/media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit");
+// 'a' command handler elapsed time: 4 seconds
+selectButton("RDIResource.HChooserHelpers_FILE_ALREADY_EXISTS_OK_TO_OVERWRITE_OK", "OK"); // JButton (A, G)
+// Tcl Message: file copy -force /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/ov7670_top.bit /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 242 seconds
+selectButton("PAResourceEtoH.ExportBitstreamFile_BITSTREAM_EXPORT_SUCCESSFUL_OK", "OK"); // JButton (A, G)
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (cM, ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,690 MB. GUI used memory: 69 MB. Current time: 4/22/23 5:56:08 PM ICT
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v), ov7670_controller_inst : ov7670_controller (ov7670_controller.v)]", 6, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v), ov7670_controller_inst : ov7670_controller (ov7670_controller.v)]", 6, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v), ov7670_capture_inst : ov7670_capture (ov7670_capture.v)]", 5, false); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ov7670_top (ov7670_top.v), ov7670_capture_inst : ov7670_capture (ov7670_capture.v)]", 5, false, false, false, false, false, true); // B (D, ch) - Double Click
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// an (ch): Save Project: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 70 MB. Current time: 4/22/23 5:56:37 PM ICT
+dismissDialog("Save Project"); // an (ch)
+// k (ch): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, ch)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_NO, "No"); // a (k)
+dismissDialog("Text Changed"); // k (ch)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bv (ch):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sat Apr 22 17:56:46 2023] Launched synth_1... Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/runme.log [Sat Apr 22 17:56:46 2023] Launched impl_1... Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bv (ch)
+// TclEventType: RUN_COMPLETED
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_COMPLETED
+// ah (ch): Bitstream Generation Completed: addNotify
+// Elapsed time: 451 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (ch)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_SIMULATION, "Export Simulation..."); // ac (ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_SIMULATION
+// G (ch): Export Simulation Files: addNotify
+dismissDialog("Export Simulation Files"); // G (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (ch)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES, "Export Bitstream File..."); // ac (ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES
+setFileChooser("/media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit");
+// 'a' command handler elapsed time: 5 seconds
+selectButton("RDIResource.HChooserHelpers_FILE_ALREADY_EXISTS_OK_TO_OVERWRITE_OK", "OK"); // JButton (A, G)
+// Tcl Message: file copy -force /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/ov7670_top.bit /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit 
+selectButton("PAResourceEtoH.ExportBitstreamFile_BITSTREAM_EXPORT_SUCCESSFUL_OK", "OK"); // JButton (A, G)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 1,740 MB (+18008kb) [02:04:58]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,740 MB. GUI used memory: 70 MB. Current time: 4/22/23 6:18:43 PM ICT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,764 MB. GUI used memory: 69 MB. Current time: 4/22/23 6:19:12 PM ICT
+// Elapsed time: 896 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// TclEventType: DG_GRAPH_GENERATED
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ch)
+// TclEventType: RUN_LAUNCH
+// bv (ch):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Sat Apr 22 18:19:39 2023] Launched synth_1... Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/runme.log [Sat Apr 22 18:19:39 2023] Launched impl_1... Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bv (ch)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 298 seconds
+selectTab((HResource) null, (HResource) null, "Log", 2); // aE (Q, ch)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ch)
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_COMPLETED
+// ah (ch): Bitstream Generation Completed: addNotify
+// Elapsed time: 125 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (ch)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES, "Export Bitstream File..."); // ac (ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES
+setFileChooser("/media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit");
+// 'a' command handler elapsed time: 4 seconds
+selectButton("RDIResource.HChooserHelpers_FILE_ALREADY_EXISTS_OK_TO_OVERWRITE_OK", "OK"); // JButton (A, G)
+// Tcl Message: file copy -force /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/ov7670_top.bit /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit 
+selectButton("PAResourceEtoH.ExportBitstreamFile_BITSTREAM_EXPORT_SUCCESSFUL_OK", "OK"); // JButton (A, G)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,693 MB. GUI used memory: 71 MB. Current time: 4/22/23 6:49:13 PM ICT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 1797 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ch)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bv (ch):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ch): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (ch)
+// bv (ch):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Apr 22 18:57:41 2023] Launched synth_1... Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/runme.log [Sat Apr 22 18:57:41 2023] Launched impl_1... Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:27 ; elapsed = 00:00:41 . Memory (MB): peak = 6928.531 ; gain = 0.000 ; free physical = 1497 ; free virtual = 16767 
+// Elapsed time: 40 seconds
+dismissDialog("Generate Bitstream"); // bv (ch)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ch): Bitstream Generation Completed: addNotify
+// Elapsed time: 505 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // Z (ch)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (ch)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES, "Export Bitstream File..."); // ac (ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, ch)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES
+setFileChooser("/media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit");
+// 'a' command handler elapsed time: 7 seconds
+selectButton("RDIResource.HChooserHelpers_FILE_ALREADY_EXISTS_OK_TO_OVERWRITE_OK", "OK"); // JButton (A, G)
+// Tcl Message: file copy -force /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/ov7670_top.bit /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit 
+selectButton("PAResourceEtoH.ExportBitstreamFile_BITSTREAM_EXPORT_SUCCESSFUL_OK", "OK"); // JButton (A, G)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U (q, ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U (q, ch)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U (q, ch)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // U (q, ch)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U (q, ch)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U (q, ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // U (q, ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U (q, ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U (q, ch)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U (q, ch)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // U (q, ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // U (q, ch)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U (q, ch)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // U (q, ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U (q, ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U (q, ch)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U (q, ch)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U (q, ch)

@@ -24,7 +24,7 @@ module i2c_sender(
   assign siod = (busy_sr[11:10] == 2'b10 || busy_sr[20:19] == 2'b10 || busy_sr[29:28] == 2'b10) ? 1'bz : data_sr[31];
 
   always @(posedge clk) begin
-    taken <= 1'b0;
+    // taken <= 1'b0;
     if(busy_sr[31] == 1'b0) begin
       sioc <= 1'b1;
       if(send == 1'b1) begin
@@ -35,11 +35,13 @@ module i2c_sender(
         end
         else begin
           divider <= divider + 1;
+          taken   <= 1'b0;
           // this only happens on powerup
         end
       end
     end
     else begin
+      taken   <= 1'b0;
       case({busy_sr[32 - 1:32 - 3], busy_sr[2:0]})
       6'b111_111 : begin
         // start seq #1

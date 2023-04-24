@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat Apr 22 16:13:20 2023
+# Process ID: 69895
+# Current directory: /media/nguyenvietthi/DATA/camera_to_vga/fpga
+# Command line: vivado cam2vga.xdc
+# Log file: /media/nguyenvietthi/DATA/camera_to_vga/fpga/vivado.log
+# Journal file: /media/nguyenvietthi/DATA/camera_to_vga/fpga/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/ov7670_top.bit /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/ov7670_top.bit /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/ov7670_top.bit /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/ov7670_top.bit /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/ov7670_top.bit /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/ov7670_top.bit /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/ov7670_top.bit /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit

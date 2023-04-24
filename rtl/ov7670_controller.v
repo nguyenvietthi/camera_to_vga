@@ -12,8 +12,8 @@ module ov7670_controller(
 
   reg sys_clk = 'b0;
   wire [15:0] command;
-  wire finished = 'b0;
-  wire taken = 'b0;
+  wire finished;
+  wire taken;
   wire send;
 
   assign config_finished = finished;

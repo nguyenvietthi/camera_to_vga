@@ -28,7 +28,7 @@ module ov7670_capture(
       wr_hold <= {2{1'b0}};
     end
     else begin
-      dout <= {d_latch[10:7],d_latch[15:12],d_latch[4:1]};
+      dout <= {d_latch[11:8], d_latch[7:4], d_latch[3:0]};
       address <= address_next;
       we <= wr_hold[1];
       wr_hold <= {wr_hold[0],href &  ~wr_hold[0]};

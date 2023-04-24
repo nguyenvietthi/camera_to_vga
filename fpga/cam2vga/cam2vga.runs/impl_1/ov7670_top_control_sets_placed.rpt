@@ -1,0 +1,85 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
+| Date         : Tue Apr 25 00:07:19 2023
+| Host         : nguyenvietthi running 64-bit Ubuntu 20.04.4 LTS
+| Command      : report_control_sets -verbose -file ov7670_top_control_sets_placed.rpt
+| Design       : ov7670_top
+| Device       : xc7z020
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    16 |
+| Unused register locations in slices containing registers |    73 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            3 |
+|      8 |            1 |
+|     10 |            1 |
+|     11 |            2 |
+|     12 |            1 |
+|    16+ |            8 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              37 |           23 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              60 |           22 |
+| Yes          | No                    | No                     |              93 |           23 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              65 |           20 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------+-----------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+
+|        Clock Signal       |                       Enable Signal                       |                       Set/Reset Signal                       | Slice Load Count | Bel Load Count |
++---------------------------+-----------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+
+|  clk_wiz_inst/inst/CLK_25 |                                                           | vga_inst/vga_hsync0                                          |                1 |              1 |
+|  clk_wiz_inst/inst/CLK_25 |                                                           | vga_inst/vga_vsync0                                          |                1 |              1 |
+|  clk_wiz_inst/inst/CLK_50 |                                                           | ov7670_controller_inst/i2c_sender_inst/sioc_i_1_n_0          |                1 |              1 |
+|  clk_wiz_inst/inst/CLK_50 | ov7670_controller_inst/i2c_sender_inst/divider[7]_i_1_n_0 |                                                              |                1 |              8 |
+|  clk_wiz_inst/inst/CLK_25 | vga_inst/vCounter_1                                       |                                                              |                3 |             10 |
+|  clk_wiz_inst/inst/CLK_25 |                                                           |                                                              |                4 |             11 |
+|  clk_wiz_inst/inst/CLK_50 | ov7670_controller_inst/ov7670_registers_inst/busy_sr0     | ov7670_controller_inst/ov7670_registers_inst/data_sr_reg[30] |                4 |             11 |
+|  clk_wiz_inst/inst/CLK_25 |                                                           | vga_inst/blank                                               |                7 |             12 |
+|  clk_wiz_inst/inst/CLK_50 | ov7670_controller_inst/i2c_sender_inst/E[0]               | debounce_inst/SR[0]                                          |                6 |             16 |
+|  clk_wiz_inst/inst/CLK_25 | vga_inst/address[0]_i_2_n_0                               | vga_inst/address[0]_i_1_n_0                                  |                5 |             19 |
+|  OV7670_PCLK_IBUF_BUFG    | ov7670_capture_inst/p_1_in                                | OV7670_VSYNC_IBUF                                            |                5 |             19 |
+|  OV7670_PCLK_IBUF_BUFG    |                                                           | OV7670_VSYNC_IBUF                                            |                6 |             21 |
+|  clk_wiz_inst/inst/CLK_50 |                                                           | debounce_inst/clear                                          |                6 |             24 |
+|  OV7670_PCLK_IBUF_BUFG    | ov7670_capture_inst/d_latch[11]_i_1_n_0                   |                                                              |                9 |             25 |
+|  clk_wiz_inst/inst/CLK_50 |                                                           |                                                              |               19 |             26 |
+|  clk_wiz_inst/inst/CLK_50 | ov7670_controller_inst/ov7670_registers_inst/busy_sr0     |                                                              |               11 |             51 |
++---------------------------+-----------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+
+
+
