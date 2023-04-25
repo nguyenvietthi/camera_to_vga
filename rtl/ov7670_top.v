@@ -59,9 +59,9 @@ module ov7670_top(
 
   always @(config_finished) begin
     if(config_finished) begin
-      LED = 8'b00000000;
-    end else begin
       LED = 8'b11111111;
+    end else begin
+      LED = 8'b00000000;
     end
   end
 
@@ -82,14 +82,14 @@ module ov7670_top(
     .config_finished(config_finished),
     .siod           (OV7670_SIOD    ),
     .pwdn           (OV7670_PWDN    ),
-    .reset          (OV7670_RESET   ),
-    .xclk           (OV7670_XCLK    )
+    .reset          (OV7670_RESET   )
   );
 
   clk_wiz clk_wiz_inst(
-    .CLK_100(clk100),
-    .CLK_50 (clk50 ),
-    .CLK_25 (clk25 )
+    .CLK_100(clk100     ),
+    .CLK_50 (clk50      ),
+    .CLK_25 (clk25      ),
+    .CLK_24 (OV7670_XCLK)
   );
 
 

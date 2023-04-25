@@ -5,8 +5,7 @@ module ov7670_controller(
   output wire sioc           ,
   inout  wire siod           ,
   output wire reset          ,
-  output wire pwdn           ,
-  output wire xclk           
+  output wire pwdn             
 );
   parameter camera_address = 8'h42;  // 42"; -- Device write ID - see top of page 11 of data sheet
 
@@ -34,8 +33,7 @@ module ov7670_controller(
   // Normal mode
   assign pwdn = 1'b0;
   // Power device up
-  assign xclk = sys_clk;
-  
+
   ov7670_registers ov7670_registers_inst(
     .clk     (clk     ),
     .advance (taken   ),
@@ -43,9 +41,5 @@ module ov7670_controller(
     .finished(finished),
     .resend  (resend  )
   );
-
-  always @(posedge clk) begin
-    sys_clk <=  ~sys_clk;
-  end
 
 endmodule

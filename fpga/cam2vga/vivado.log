@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Apr 25 21:38:18 2023
+# Process ID: 8792
+# Current directory: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga
+# Command line: vivado cam2vga.xpr
+# Log file: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/vivado.log
+# Journal file: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project cam2vga.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/nguyenvietthi/DATA/linux_tools/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 6188.148 ; gain = 173.852 ; free physical = 1066 ; free virtual = 20288
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.CLKOUT3_USED {true} CONFIG.CLK_OUT3_PORT {CLK_24} CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {24} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {6.000} CONFIG.MMCM_CLKIN1_PERIOD {10.0} CONFIG.MMCM_CLKIN2_PERIOD {10.0} CONFIG.MMCM_CLKOUT0_DIVIDE_F {24.000} CONFIG.MMCM_CLKOUT1_DIVIDE {12} CONFIG.MMCM_CLKOUT2_DIVIDE {25} CONFIG.NUM_OUT_CLKS {3} CONFIG.CLKOUT1_JITTER {200.470} CONFIG.CLKOUT1_PHASE_ERROR {132.063} CONFIG.CLKOUT2_JITTER {174.353} CONFIG.CLKOUT2_PHASE_ERROR {132.063} CONFIG.CLKOUT3_JITTER {202.114} CONFIG.CLKOUT3_PHASE_ERROR {132.063}] [get_ips clk_wiz]
+generate_target all [get_files  /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.srcs/sources_1/ip/clk_wiz/clk_wiz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz'...
+export_ip_user_files -of_objects [get_files /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.srcs/sources_1/ip/clk_wiz/clk_wiz.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.srcs/sources_1/ip/clk_wiz/clk_wiz.xci] -directory /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.ip_user_files/sim_scripts -ip_user_files_dir /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.ip_user_files -ipstatic_source_dir /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.ip_user_files/ipstatic -lib_map_path [list {modelsim=/media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.cache/compile_simlib/modelsim} {questa=/media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.cache/compile_simlib/questa} {ies=/media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.cache/compile_simlib/ies} {xcelium=/media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.cache/compile_simlib/xcelium} {vcs=/media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.cache/compile_simlib/vcs} {riviera=/media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Apr 25 21:47:26 2023] Launched synth_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/runme.log
+[Tue Apr 25 21:47:26 2023] Launched impl_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Apr 25 21:48:08 2023] Launched synth_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/runme.log
+[Tue Apr 25 21:48:08 2023] Launched impl_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/runme.log
+file copy -force /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/ov7670_top.bit /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Apr 25 22:33:55 2023] Launched synth_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/runme.log
+[Tue Apr 25 22:33:55 2023] Launched impl_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/runme.log
+file copy -force /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/ov7670_top.bit /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.bit
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {25.175} CONFIG.MMCM_DIVCLK_DIVIDE {9} CONFIG.MMCM_CLKFBOUT_MULT_F {62.875} CONFIG.MMCM_CLKIN1_PERIOD {10.000} CONFIG.MMCM_CLKIN2_PERIOD {10.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {27.750} CONFIG.MMCM_CLKOUT1_DIVIDE {14} CONFIG.MMCM_CLKOUT2_DIVIDE {29} CONFIG.CLKOUT1_JITTER {615.810} CONFIG.CLKOUT1_PHASE_ERROR {744.762} CONFIG.CLKOUT2_JITTER {558.381} CONFIG.CLKOUT2_PHASE_ERROR {744.762} CONFIG.CLKOUT3_JITTER {620.046} CONFIG.CLKOUT3_PHASE_ERROR {744.762}] [get_ips clk_wiz]
+generate_target all [get_files  /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.srcs/sources_1/ip/clk_wiz/clk_wiz.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz'...
+export_ip_user_files -of_objects [get_files /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.srcs/sources_1/ip/clk_wiz/clk_wiz.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.srcs/sources_1/ip/clk_wiz/clk_wiz.xci] -directory /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.ip_user_files/sim_scripts -ip_user_files_dir /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.ip_user_files -ipstatic_source_dir /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.ip_user_files/ipstatic -lib_map_path [list {modelsim=/media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.cache/compile_simlib/modelsim} {questa=/media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.cache/compile_simlib/questa} {ies=/media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.cache/compile_simlib/ies} {xcelium=/media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.cache/compile_simlib/xcelium} {vcs=/media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.cache/compile_simlib/vcs} {riviera=/media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Apr 25 23:03:33 2023] Launched synth_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/runme.log
+[Tue Apr 25 23:03:33 2023] Launched impl_1...
+Run output will be captured here: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/runme.log
+file copy -force /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/impl_1/ov7670_top.bit /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/test.bit

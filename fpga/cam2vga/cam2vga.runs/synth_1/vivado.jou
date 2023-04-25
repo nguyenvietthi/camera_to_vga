@@ -2,8 +2,8 @@
 # Vivado v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Tue Apr 25 00:01:14 2023
-# Process ID: 60041
+# Start of session at: Tue Apr 25 23:03:35 2023
+# Process ID: 35050
 # Current directory: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1
 # Command line: vivado -log ov7670_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ov7670_top.tcl
 # Log file: /media/nguyenvietthi/DATA/camera_to_vga/fpga/cam2vga/cam2vga.runs/synth_1/ov7670_top.vds

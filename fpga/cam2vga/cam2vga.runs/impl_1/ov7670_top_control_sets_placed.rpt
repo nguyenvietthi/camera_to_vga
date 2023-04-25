@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
-| Date         : Tue Apr 25 00:07:19 2023
+| Date         : Tue Apr 25 23:10:16 2023
 | Host         : nguyenvietthi running 64-bit Ubuntu 20.04.4 LTS
 | Command      : report_control_sets -verbose -file ov7670_top_control_sets_placed.rpt
 | Design       : ov7670_top
@@ -24,7 +24,7 @@ Table of Contents
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
 | Number of unique control sets                            |    16 |
-| Unused register locations in slices containing registers |    73 |
+| Unused register locations in slices containing registers |    74 |
 +----------------------------------------------------------+-------+
 
 
@@ -49,12 +49,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              37 |           23 |
+| No           | No                    | No                     |              36 |           24 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              60 |           22 |
-| Yes          | No                    | No                     |              93 |           23 |
+| No           | Yes                   | No                     |              60 |           28 |
+| Yes          | No                    | No                     |              93 |           28 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              65 |           20 |
+| Yes          | Yes                   | No                     |              65 |           23 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -67,19 +67,19 @@ Table of Contents
 |  clk_wiz_inst/inst/CLK_25 |                                                           | vga_inst/vga_hsync0                                          |                1 |              1 |
 |  clk_wiz_inst/inst/CLK_25 |                                                           | vga_inst/vga_vsync0                                          |                1 |              1 |
 |  clk_wiz_inst/inst/CLK_50 |                                                           | ov7670_controller_inst/i2c_sender_inst/sioc_i_1_n_0          |                1 |              1 |
-|  clk_wiz_inst/inst/CLK_50 | ov7670_controller_inst/i2c_sender_inst/divider[7]_i_1_n_0 |                                                              |                1 |              8 |
-|  clk_wiz_inst/inst/CLK_25 | vga_inst/vCounter_1                                       |                                                              |                3 |             10 |
-|  clk_wiz_inst/inst/CLK_25 |                                                           |                                                              |                4 |             11 |
-|  clk_wiz_inst/inst/CLK_50 | ov7670_controller_inst/ov7670_registers_inst/busy_sr0     | ov7670_controller_inst/ov7670_registers_inst/data_sr_reg[30] |                4 |             11 |
-|  clk_wiz_inst/inst/CLK_25 |                                                           | vga_inst/blank                                               |                7 |             12 |
-|  clk_wiz_inst/inst/CLK_50 | ov7670_controller_inst/i2c_sender_inst/E[0]               | debounce_inst/SR[0]                                          |                6 |             16 |
-|  clk_wiz_inst/inst/CLK_25 | vga_inst/address[0]_i_2_n_0                               | vga_inst/address[0]_i_1_n_0                                  |                5 |             19 |
+|  clk_wiz_inst/inst/CLK_50 | ov7670_controller_inst/i2c_sender_inst/divider[7]_i_1_n_0 |                                                              |                2 |              8 |
+|  clk_wiz_inst/inst/CLK_25 | vga_inst/vCounter_1                                       |                                                              |                4 |             10 |
+|  clk_wiz_inst/inst/CLK_25 |                                                           |                                                              |                3 |             11 |
+|  clk_wiz_inst/inst/CLK_50 | ov7670_controller_inst/ov7670_registers_inst/busy_sr0     | ov7670_controller_inst/ov7670_registers_inst/data_sr_reg[30] |                5 |             11 |
+|  clk_wiz_inst/inst/CLK_25 |                                                           | vga_inst/blank                                               |               12 |             12 |
+|  clk_wiz_inst/inst/CLK_50 | ov7670_controller_inst/i2c_sender_inst/E[0]               | debounce_inst/SR[0]                                          |                4 |             16 |
+|  clk_wiz_inst/inst/CLK_25 | vga_inst/address[0]_i_2_n_0                               | vga_inst/address[0]_i_1_n_0                                  |                9 |             19 |
 |  OV7670_PCLK_IBUF_BUFG    | ov7670_capture_inst/p_1_in                                | OV7670_VSYNC_IBUF                                            |                5 |             19 |
-|  OV7670_PCLK_IBUF_BUFG    |                                                           | OV7670_VSYNC_IBUF                                            |                6 |             21 |
+|  OV7670_PCLK_IBUF_BUFG    |                                                           | OV7670_VSYNC_IBUF                                            |                7 |             21 |
 |  clk_wiz_inst/inst/CLK_50 |                                                           | debounce_inst/clear                                          |                6 |             24 |
-|  OV7670_PCLK_IBUF_BUFG    | ov7670_capture_inst/d_latch[11]_i_1_n_0                   |                                                              |                9 |             25 |
-|  clk_wiz_inst/inst/CLK_50 |                                                           |                                                              |               19 |             26 |
-|  clk_wiz_inst/inst/CLK_50 | ov7670_controller_inst/ov7670_registers_inst/busy_sr0     |                                                              |               11 |             51 |
+|  clk_wiz_inst/inst/CLK_50 |                                                           |                                                              |               21 |             25 |
+|  OV7670_PCLK_IBUF_BUFG    | ov7670_capture_inst/d_latch[11]_i_1_n_0                   |                                                              |               10 |             25 |
+|  clk_wiz_inst/inst/CLK_50 | ov7670_controller_inst/ov7670_registers_inst/busy_sr0     |                                                              |               13 |             51 |
 +---------------------------+-----------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+
 
 

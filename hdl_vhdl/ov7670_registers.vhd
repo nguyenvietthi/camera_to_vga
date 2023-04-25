@@ -41,7 +41,7 @@ begin
 				when x"04" => sreg <= x"0C00"; -- COM3   Lots of stuff, enable scaling, all others off
 				when x"05" => sreg <= x"3E00"; -- COM14  PCLK scaling off
 				
-   			when x"06" => sreg <= x"8C00"; -- RGB444 Set RGB format
+   			when x"06" => sreg <= x"8C02"; -- RGB444 Set RGB format
    			when x"07" => sreg <= x"0400"; -- COM1   no CCIR601
  				when x"08" => sreg <= x"4010"; -- COM15  Full 0-255 output, RGB 565
 				when x"09" => sreg <= x"3a04"; -- TSLB   Set UV ordering,  do not auto-reset window
@@ -100,4 +100,3 @@ begin
 		end if;
 	end process;
 end Behavioral;
-

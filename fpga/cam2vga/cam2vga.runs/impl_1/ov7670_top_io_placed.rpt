@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
-| Date                      : Tue Apr 25 00:07:19 2023
+| Date                      : Tue Apr 25 23:10:16 2023
 | Host                      : nguyenvietthi running 64-bit Ubuntu 20.04.4 LTS
 | Command                   : report_io -file ov7670_top_io_placed.rpt
 | Design                    : ov7670_top

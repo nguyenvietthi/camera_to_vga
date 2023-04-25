@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
-| Date         : Tue Apr 25 00:07:45 2023
+| Date         : Tue Apr 25 23:22:47 2023
 | Host         : nguyenvietthi running 64-bit Ubuntu 20.04.4 LTS
 | Command      : report_drc -file ov7670_top_drc_routed.rpt -pb ov7670_top_drc_routed.pb -rpx ov7670_top_drc_routed.rpx
 | Design       : ov7670_top
@@ -42,7 +42,7 @@ Resolution: Poor placement of an IO pin and a BUFG has resulted in the router us
  This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
 
 	OV7670_PCLK_IBUF_inst (IBUF.O) is locked to W10
-	OV7670_PCLK_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y1
+	OV7670_PCLK_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y2
 
 Related violations: <none>
 
